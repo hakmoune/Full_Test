@@ -33,12 +33,16 @@
   font-size: 14px;
 }
 
+.actions span input {
+  margin-right: 10px;
+}
+
 .custom-icon {
-  color: #808080;
-  font-size: 20px;
+  color: #b7b7b7;
+  font-size: 17px;
 }
 .actions span a {
-  margin-right: 7px;
+  margin-right: 15px;
 }
 
 .users-container {
@@ -69,14 +73,17 @@
   top: 5px;
 }
 
-ul.info {
+div.infos {
   display: flex;
   flex-direction: column;
-  list-style: none;
-  padding: 0;
+  margin-top: 8px;
 }
-ul.info li {
-  margin-bottom: 5px;
+div.infos span {
+  font-weight: 500;
+}
+span img {
+  border-radius: 50%;
+  width: 51px;
 }
 
 .btn-profile {
@@ -86,21 +93,31 @@ ul.info li {
   padding: 10px;
   color: black;
   font-size: 11px;
+  margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 /*RESPONSIVE DESIGN*/
 @media (max-width: 328px) {
   .users-container {
-    height: 322px;
+    height: 311px;
+  }
+  .actions {
+    flex-direction: column;
+    text-align: center;
+  }
+  span.selected-items {
+    margin-bottom: 12px;
   }
 }
-@media (max-width: 203px) {
+@media (max-width: 212px) {
   .users-container {
-    height: 301px;
+    height: 292px;
   }
 }
-@media (max-width: 184px) {
+@media (max-width: 154px) {
   .users-container {
-    height: 280px;
+    height: 273px;
   }
 }
