@@ -33,15 +33,15 @@
   font-size: 14px;
 }
 
-.actions span input {
+.actions div input {
   margin-right: 10px;
 }
 
 .custom-icon {
   color: #b7b7b7;
-  font-size: 17px;
+  font-size: 20px;
 }
-.actions span a {
+.actions div a {
   margin-right: 15px;
 }
 
@@ -101,7 +101,7 @@ span img {
 /*RESPONSIVE DESIGN*/
 @media (max-width: 328px) {
   .users-container {
-    height: 311px;
+    height: 323px;
   }
   .actions {
     flex-direction: column;
@@ -111,13 +111,18 @@ span img {
     margin-bottom: 12px;
   }
 }
-@media (max-width: 212px) {
+@media (max-width: 220px) {
   .users-container {
-    height: 292px;
+    height: 304px;
+  }
+}
+@media (max-width: 163px) {
+  .users-container {
+    height: 285px;
   }
 }
 @media (max-width: 154px) {
   .users-container {
-    height: 273px;
+    height: 285px;
   }
 }
