@@ -25,7 +25,7 @@ export default function User({
           <img src={user.avatar_url} alt={`${user.login}'s avatar`} />
         </span>
         <span>{user.id}</span>
-        <span>{concatString(user.login, 13, 10, "...")}</span>
+        <span>{concatString(user.login, 10, 7, "...")}</span>
       </div>
       <a
         href={user.html_url}
