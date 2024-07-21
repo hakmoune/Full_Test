@@ -6,12 +6,14 @@ interface IProps {
   user: IUser;
   usersSelected: number[];
   setUsersSelected: React.Dispatch<React.SetStateAction<number[]>>;
+  editMode: boolean;
 }
 
 export default function User({
   user,
   usersSelected,
   setUsersSelected,
+  editMode,
 }: IProps) {
   return (
     <div className="item">
@@ -19,6 +21,7 @@ export default function User({
         setUsersSelected={setUsersSelected}
         usersSelected={usersSelected}
         userId={user.id}
+        editMode={editMode}
       />
       <div className="infos">
         <span>
