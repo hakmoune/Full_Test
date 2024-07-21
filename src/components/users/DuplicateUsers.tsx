@@ -8,7 +8,9 @@ interface IProps {
 }
 
 export default function DuplicateUsers({ setUsers, usersSelected }: IProps) {
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  const handleDuplicate = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
     e.preventDefault();
 
     setUsers((prevState) => {
@@ -24,7 +26,7 @@ export default function DuplicateUsers({ setUsers, usersSelected }: IProps) {
   };
 
   return (
-    <a href="#" onClick={handleClick}>
+    <a href="#" onClick={handleDuplicate}>
       <FontAwesomeIcon icon={faCopy} className="custom-icon" />
     </a>
   );

@@ -7,7 +7,7 @@ import SelectAllUsers from "../components/users/SelectAllUsers";
 import Users from "../components/users/Users";
 import useUsersSearch from "../hooks/useUsersSearch";
 import Title from "../components/common/Title";
-import EdtMode from "../components/users/EdtMode";
+import EditMode from "../components/users/EdtMode";
 
 export default function GithubUserSearchPage() {
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -25,7 +25,7 @@ export default function GithubUserSearchPage() {
         setUsersSelected={setUsersSelected}
       />
 
-      <EdtMode editMode={editMode} setEditMode={setEditMode} />
+      <EditMode editMode={editMode} setEditMode={setEditMode} />
 
       <div className={`actions ${editMode ? "" : "displayed"}`}>
         <SelectAllUsers
